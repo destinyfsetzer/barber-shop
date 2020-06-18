@@ -1,0 +1,42 @@
+.grid-container {
+    display: grid;
+}
+
+body {
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows: 2fr 5fr 3fr 2fr;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "list list list"
+    "photos photos photos"
+    "footer footer footer"
+    ;
+}
+
+.logo {
+    display: block;
+    width: 500px;
+    height: auto;
+}
+
+
+.top-container {
+    grid-area: header
+}
+
+ .middle-container {
+     grid-area: main
+}
+
+.section-one {
+    grid-area: list;
+}
+
+.section-two {
+    grid-area: photos;
+}
+
+.bottom-container {
+    grid-area: footer;
+}
