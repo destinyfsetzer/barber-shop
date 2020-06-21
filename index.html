@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="landing-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
     <title>Landing Page</title>
 </head>
+
 <body class="grid-container">
-        <header class="grid-container top-container">
-            <img class="logo" src="./images/logo.png" alt="barber shop logo">
-             <nav>
-                <a href="./../index.html">Home</a> 
-                <a href="./../about/about.html">About</a> 
-                <a href="./../gallery/gallery.html">Gallery</a> 
-                <a href="./../blogs/blogs.html">Blogs</a> 
-                <a href="./../contact/contact.html">Contact</a> 
-            </nav>
-        </header>
-        <main class="grid-container middle-container">
-            <section class=" grid-container section-one">
-                <ul class="listblock">
-                    <li class="blackandwhite">THE BEACON TO ALL MANKIND</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
-                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit</li>
-                </ul>
-            <button a href="./../blogs/blogs.html">Read More</button>
-            </section>
-        </main>
-        <section class="grid-container section-two">
-            <div class="image-container">
-            <img src="./images/thefather.jpeg" alt="black and white photo of a bearded man">
-            <h3 class="blackandwhite">The Father</h3>
-            <img src="./images/galleryimg2.jpeg" alt="black and white headshot of a man">
-            <h3 class="blackandwhite">The Actor</h3>
-            <img src="./images/galleryimg4.jpeg" alt="">
-            <h3 class="blackandwhite">The Artist</h3>
+    <header class="top-container">
+        <img class="logo" src="./images/barberlogo.png" alt="barber shop logo">
+        <nav class="links">
+            <a href="./../index.html">Home</a>
+            <a href="./../about/about.html">About</a>
+            <a href="./../gallery/gallery.html">Gallery</a>
+            <a href="./../blogs/blogs.html">Blogs</a>
+            <a href="./../contact/contact.html">Contact</a>
+        </nav>
+    </header>
+    <!-- <main class="grid-container middle-container"> -->
+    <section class="section-one">
+        <ul>
+            <li><h3 class="list-title">THE BEACON TO ALL MANKIND</h3></li>
+            <li>Lorem ipsum dolor sit amet conse adipisicing</li>
+            <li>Lorem ipsum dolor sit amet conse, adipisicing elit</li>
+            <li>Lorem ipsum dolor sit, amet conse adipisicing elit</li>
+        </ul>
+        <button a href="./../blogs/blogs.html">Read More</button>
+    </section>
+    <!-- </main> -->
+    <section class="section-two">
+        <div class="image-container">
+            <div class="column">
+                <img src="./images/elevate1.jpeg" alt="black and white photo of a bearded man" class="border" height="100px"
+                    width="100px">
+                <h3 class="blackandwhite">ELEVATE</h3>
             </div>
-         </section>
-    <footer class="grid-container bottom-container">
+            <div class="column">
+                <img src="./images/elevate4.jpeg" alt="black and white headshot of a man" class="border" height="100px"
+                    width="100px">
+                <h3 class="blackandwhite">YOUR</h3>
+            </div>
+            <div class="column">
+                <img src="./images/elevate7.jpeg" alt="artistic man" class="border" height="100px" width="100px">
+                <h3 class="blackandwhite">LOOK</h3>
+            </div>
+        </div>
+    </section>
+    <footer class="bottom-container">
         <icon></icon>
         <icon></icon>
         <icon></icon>
-            <p><small>&copy; 2020 Destiny Setzer. All rights reserved.</small></p> 
+        <p><small>&copy; 2020 Destiny Setzer. All rights reserved.</small></p>
     </footer>
 </body>
+
 </html>
