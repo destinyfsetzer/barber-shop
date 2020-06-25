@@ -1,0 +1,88 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 3fr .5fr;
+    grid-template-areas: 
+    "header header header"
+    "image image image"
+    "about about about"
+    "footer footer footer"
+    ;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+  
+  nav {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      font-size: 20px;
+      font-weight: bolder;
+      margin-bottom: 10px;
+      letter-spacing: 3px;
+    }
+  
+  .logo {
+      align-self: center;
+      margin-bottom: 10px;
+  }
+  
+  .logo img{
+  width: 65%;
+  }
+  
+  ul {
+      list-style: none;
+      margin-top: 5%;
+  }
+  
+  .links {
+      grid-area: links;
+      text-align: center;
+  }
+  
+  a {
+      color: #76575D;
+      text-decoration: none;
+  }
+  
+  a:hover {
+     color: #6D9891;
+    }
+  
+.header {
+    grid-area: header;
+    color: #76575D;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image {
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.about {
+    grid-area: about;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 10px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #AFAC9B;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
