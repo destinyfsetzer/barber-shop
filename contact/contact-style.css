@@ -8,9 +8,55 @@
     "footer footer footer"
 }
 
+
+body {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+  
+  nav {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      font-size: 20px;
+      font-weight: bolder;
+      margin-bottom: 10px;
+      letter-spacing: 3px;
+    }
+
+.logo {
+    grid-area: logo; 
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.logo img{
+width: 65%;
+}
+
+.links {
+  grid-area: links;
+  text-align: center;
+}
+
+a {
+  color: #76575D;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #6D9891;
+ }
+
 .header {
     grid-area: header;
-    background-color: green;
+    background-color: white;
+    color: #76575D;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contact-form {
@@ -22,3 +68,21 @@ footer {
     grid-area: footer;
     background-color: orange; 
 }
+
+body {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+  
+  nav {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      font-size: 20px;
+      font-weight: bolder;
+      margin-bottom: 10px;
+      letter-spacing: 3px;
+    }
+  
+    
