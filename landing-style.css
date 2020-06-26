@@ -133,3 +133,51 @@ width: 100%;
 .border {
     border: 1px solid black;
 }
+
+    @media (max-width: 900px) {
+
+        li {
+            margin-left: 40%;
+            margin-right:20%;
+        }
+
+        button {
+            margin-left: 43%;
+        }
+    
+     }
+   
+   
+      @media (max-width: 600px) {
+     
+       .grid-container {
+           display: grid;
+           grid-template-columns: 1fr;
+           grid-template-rows: 2fr 3r 2fr .5fr;
+           grid-template-areas: 
+           "header"
+           "list"
+           "photos"
+           "footer"
+           ;
+       }
+
+       /* .image-container {
+           flex-direction: column;
+       } */
+
+       li {
+           margin-left: 20%;
+           margin-right:10%;
+       }
+
+       button {
+           margin-left: 25%;
+       }
+      
+       .logo img{
+        width: 100%;
+        }
+
+     }
+   
