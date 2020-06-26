@@ -28,6 +28,7 @@
     justify-content: center;
     padding-top: 10px;
     margin-top: 30px;
+
 }
 
 .blog2 {
@@ -104,11 +105,14 @@ body {
 
 .bloginfo {
     border: 2px solid black;
-    width: 500px;
+    max-width: 500px;
+    min-width: 300px;
     height: 300px;
     padding-left: 3%;
     padding-right: 3%;
     text-align: center;
+    margin-right: 5px;
+
 }
 
 button {
@@ -124,4 +128,57 @@ button {
 h3 {
     font-size: 30px; 
     font-weight: bolder;
+}
+
+
+@media (max-width: 900px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .5fr 1fr 1fr 1fr .25fr;
+        grid-template-areas: 
+        "header header"
+        "blog1 blog1"
+        "blog2 blog2"
+        "blog3 blog3"
+        "footer footer";
+    }
+   
+    /* .bloginfo {
+       width: auto;
+    } */
+
+  }
+
+
+   @media (max-width: 600px) {
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr ;
+      grid-template-rows: .5fr 1fr 1fr 1fr .25fr;
+      grid-template-areas: 
+      "header"
+      "blog1"
+      "blog2"
+      "blog3"
+      "footer";
+  }
+
+    .float {
+        display: none;
+    }
+
+    .logo img{
+      width: 100%;
+      }
+
+    nav {
+      margin-bottom: 2px;
+    }
+
+    h3 {
+        color: #76575D
+    }
 }

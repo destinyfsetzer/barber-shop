@@ -5,7 +5,7 @@
     grid-template-areas: 
     "header header header"
     "contact contact contact"
-    "footer footer footer"
+    "footer footer footer";
 }
 
 
@@ -138,7 +138,7 @@ body {
         grid-template-areas: 
         "header"
         "contact"
-        "footer"
+        "footer";
     }
 
       .logo img{
