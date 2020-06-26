@@ -35,6 +35,11 @@ body {
     width: 65%;
   }
   
+  .responsive {
+    width: 80%;
+    height: auto;
+  }
+
   ul {
       list-style: none;
       margin-top: 5%;
@@ -102,7 +107,32 @@ footer {
     transform: translate(-50%, -50%);
   }
 
-  @media (max-width: 600px) {
-    nav {
-      display: none;
+  @media (max-width: 900px) {
+
+ .centered {
+     font-size: 30px;
+     letter-spacing: 10px;
+ }
+  }
+
+
+   @media (max-width: 600px) {
+  
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr 1r 2fr .5fr;
+        grid-template-areas: 
+        "header"
+        "image"
+        "about"
+        "footer"
+        ;
     }
+
+    .centered {
+        font-size: 20px;
+        letter-spacing: 10px;
+    }
+   
+  }
