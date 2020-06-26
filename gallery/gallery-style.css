@@ -1,7 +1,7 @@
 .grid-container {
     display: grid;
     grid-template-columns:  1fr 1fr 1fr;
-    grid-template-rows: .5fr 1fr 1fr 1fr .5fr;
+    grid-template-rows: .5fr 1fr 1fr 1fr .25fr;
     grid-template-areas: 
     "header header header"
     "row1 row1 row1"
@@ -13,41 +13,40 @@
 
 .header {
     grid-area: header;
-    background-color: blue;
+    grid-area: header;
+    background-color: white;
+    color: #76575D;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
 .image-container1 {
     grid-area: row1; 
-    background-color: pink;
     display: flex;
     flex-direction: row;
 }
 
 .image-container2 {
     grid-area: row2; 
-    background-color: yellow;
     display: flex;
     flex-direction: row;
 }
 
 .image-container3 {
     grid-area: row3; 
-    background-color :green;
     display: flex;
     flex-direction: row;
 }
 
 footer {
     grid-area: footer;
-    background-color: crimson;
+    background-color: #AFAC9B;
+    text-align: center;
+    padding-bottom: 10px;
 }
-
-/* .image-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-} */
 
 .column {
     flex: 33.33%;
@@ -56,5 +55,44 @@ footer {
 }
 
 .border {
-    border: 1px solid black;
+    border: 2px solid black;
 }
+
+body {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+  
+  nav {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      font-size: 20px;
+      font-weight: bolder;
+      margin-bottom: 10px;
+      letter-spacing: 3px;
+    }
+  
+  .logo {
+      grid-area: logo; 
+      align-self: center;
+      margin-bottom: 10px;
+  }
+  
+  .logo img{
+  width: 65%;
+  }
+
+.links {
+    text-align: center;
+}
+
+a {
+    color: #76575D;
+    text-decoration: none;
+}
+
+a:hover {
+   color: #6D9891;
+  }
