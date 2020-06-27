@@ -81,7 +81,6 @@ a:hover {
 }
 
 .header {
-    /* border: 5px solid red; */
     grid-area: header;
     background-color: white;
     color: #76575D;
@@ -91,28 +90,18 @@ a:hover {
     justify-content: center;
 }
 
-
 .section-one {
-    /* border: 5px solid yellow; */
     grid-area: list;
     background-image: url("./images/elevatebackground1.jpg");
     background-size: cover; 
     background-repeat: no-repeat;
 }
 
-/* .section-one img {
-background-size: cover; 
-width: 100%;
-} */
-
 .section-two {
-    /* border: 5px solid green; */
     grid-area: photos;
-    /* background-color: #E1C1A5; */
 }
 
 .bottom-container {
-    /* border: 5px solid purple; */
     grid-area: footer;
     background-color: #AFAC9B;
     text-align: center;
@@ -144,9 +133,7 @@ width: 100%;
         button {
             margin-left: 43%;
         }
-    
      }
-   
    
       @media (max-width: 600px) {
      
@@ -161,10 +148,6 @@ width: 100%;
            "footer"
            ;
        }
-
-       /* .image-container {
-           flex-direction: column;
-       } */
 
        li {
            margin-left: 20%;

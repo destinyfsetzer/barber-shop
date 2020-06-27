@@ -40,8 +40,7 @@ footer {
     padding: 4px auto;
   }
 
-
-  .image-container {
+.image-container {
   width: 90%;
   margin: auto; 
   display: flex; 
@@ -50,9 +49,9 @@ footer {
   justify-content: space-around;
   }
 
-  .container {
-      width: 30%;
-      margin: 5px;
+.container {
+    width: 30%;
+    margin: 5px;
   }
 
 .border {
@@ -99,7 +98,6 @@ a:hover {
   }
 
   @media (max-width: 900px) {
-     
     .grid-container {
         display: grid;
         grid-template-columns:  1fr;
@@ -146,5 +144,4 @@ a:hover {
     .logo img{
      width: 100%;
      }
-
-    }
+}

@@ -23,7 +23,6 @@
 
 .blog1 {
     grid-area: blog1;
-    /* background-color: violet; */
     display: flex;
     justify-content: center;
     padding-top: 10px;
@@ -33,7 +32,6 @@
 
 .blog2 {
     grid-area: blog2;
-    /* background-color: tomato; */
     display: flex;
     justify-content: center;
     padding-top: 20px;
@@ -41,14 +39,12 @@
 
 .blog3 {
     grid-area: blog3;
-    /* background-color: yellow; */
     display: flex;
     justify-content: center;
 }
 
 footer {
     grid-area: footer;
-    /* background-color: green; */
     background-color: #AFAC9B;
     text-align: center;
     padding-bottom: 10px;
@@ -106,7 +102,6 @@ ul {
 .bloginfo {
     border: 2px solid black;
     max-width: 500px;
-    /* min-width: 300px; */
     height: 300px;
     padding-left: 3%;
     padding-right: 3%;
@@ -135,7 +130,6 @@ h3 {
 }
 
 @media (max-width: 900px) {
-
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 2fr;

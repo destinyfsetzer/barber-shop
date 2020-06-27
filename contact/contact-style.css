@@ -8,7 +8,6 @@
     "footer footer footer";
 }
 
-
 body {
     font-family: 'Oswald', sans-serif;
     letter-spacing: 2px;
@@ -121,13 +120,10 @@ body {
       }
 
     @media (max-width: 900px) {
-
       input[type=text], select, .submit, textarea {
         width: 80%;
     }
-
-    }
-
+ }
 
      @media (max-width: 600px) {
 
@@ -152,5 +148,4 @@ body {
       nav {
         margin-bottom: 2px;
       }
-
     }
