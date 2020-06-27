@@ -60,29 +60,29 @@ body {
     font-size: 15px;
   }
   
-  nav {
-      display: flex;
-      justify-content: space-evenly;
-      width: 100%;
-      font-size: 20px;
-      font-weight: bolder;
-      margin-bottom: 10px;
-      letter-spacing: 3px;
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
     }
   
-  .logo {
-      align-self: center;
-      margin-bottom: 10px;
+.logo {
+    align-self: center;
+    margin-bottom: 10px;
   }
   
-  .logo img{
-    width: 65%;
-    border: none;
+.logo img{
+  width: 65%;
+  border: none;
   }
   
-  ul {
-      list-style: none;
-      margin-top: 5%;
+ul {
+    list-style: none;
+    margin-top: 5%;
   }
   
   .links {
@@ -106,13 +106,12 @@ body {
 .bloginfo {
     border: 2px solid black;
     max-width: 500px;
-    min-width: 300px;
+    /* min-width: 300px; */
     height: 300px;
     padding-left: 3%;
     padding-right: 3%;
     text-align: center;
     margin-right: 5px;
-
 }
 
 button {
@@ -130,12 +129,16 @@ h3 {
     font-weight: bolder;
 }
 
+.float {
+    width: 400px;
+    height: 300px; 
+}
 
 @media (max-width: 900px) {
 
     .grid-container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
         grid-template-rows: .5fr 1fr 1fr 1fr .25fr;
         grid-template-areas: 
         "header header"
@@ -144,16 +147,9 @@ h3 {
         "blog3 blog3"
         "footer footer";
     }
-   
-    /* .bloginfo {
-       width: auto;
-    } */
-
-  }
-
+}
 
    @media (max-width: 600px) {
-
     .grid-container {
       display: grid;
       grid-template-columns: 1fr ;
