@@ -1,18 +1,15 @@
 .grid-container {
     display: grid;
     grid-template-columns:  1fr 1fr 1fr;
-    grid-template-rows: .5fr 1fr 1fr 1fr .25fr;
+    grid-template-rows: .5fr 2fr .25fr;
     grid-template-areas: 
     "header header header"
-    "row1 row1 row1"
-    "row2 row2 row2"
-    "row3 row3 row3"
+    "img-f img-f img-f"
     "footer footer footer"
     ;
 }
 
 .header {
-    grid-area: header;
     grid-area: header;
     background-color: white;
     color: #76575D;
@@ -23,22 +20,11 @@
     margin-bottom: 40px;
 }
 
-.image-container1 {
-    grid-area: row1; 
+.image-container {
+    position: relative;
+    grid-area: img-f;
     display: flex;
-    flex-direction: row;
-}
-
-.image-container2 {
-    grid-area: row2; 
-    display: flex;
-    flex-direction: row;
-}
-
-.image-container3 {
-    grid-area: row3; 
-    display: flex;
-    flex-direction: row;
+    flex: wrap;
 }
 
 footer {
@@ -48,11 +34,26 @@ footer {
     padding-bottom: 10px;
 }
 
-.column {
-    flex: 33.33%;
-    padding: 10px;
-    text-align: center;
-}
+#image {
+    width: 100%;
+    border: 1px solid black;
+    padding: 4px auto;
+  }
+
+
+  .image-container {
+  width: 90%;
+  margin: auto; 
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  }
+
+  .container {
+      width: 30%;
+      margin: 5px;
+  }
 
 .border {
     border: 2px solid black;
@@ -96,3 +97,54 @@ a {
 a:hover {
    color: #6D9891;
   }
+
+  @media (max-width: 900px) {
+     
+    .grid-container {
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: .5fr 2fr 2fr .25fr;
+        grid-template-areas: 
+        "header"
+        "img-f"
+        "img-f"
+        "footer"
+        ;
+    }
+
+    .container {
+        flex: 50%;
+        max-width: 45%;
+        justify-content: space-between;
+      }
+   
+    .logo img{
+     width: 100%;
+     }
+
+    }
+
+  @media (max-width: 600px) {
+     
+    .grid-container {
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: .5fr 6fr .25fr;
+        grid-template-areas: 
+        "header"
+        "img-f"
+        "footer"
+        ;
+    }
+
+    .container {
+        flex: 100%;
+        max-width: 100%;
+        justify-content: space-between;
+      }
+   
+    .logo img{
+     width: 100%;
+     }
+
+    }
