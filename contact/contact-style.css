@@ -1,8 +1,8 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 2fr .25fr; 
-    grid-template-areas: 
+    grid-template-rows: 1fr 2fr .25fr;
+    grid-template-areas:
     "header header header"
     "contact contact contact"
     "footer footer footer";
@@ -14,25 +14,25 @@ body {
     font-size: 15px;
     text-align: center;
   }
-  
+
   nav {
       display: flex;
       justify-content: space-evenly;
       width: 100%;
       font-size: 20px;
       font-weight: bolder;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
       letter-spacing: 3px;
     }
 
 .logo {
     grid-area: logo; 
     align-self: center;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .logo img{
-width: 65%;
+width: 55%;
 }
 
 .links {
@@ -138,7 +138,7 @@ body {
     }
 
       .logo img{
-        width: 100%;
+        width: 20%;
         }
 
         input[type=text], select, .submit, textarea {
