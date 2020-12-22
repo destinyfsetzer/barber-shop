@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: .5fr 1r 2fr .5fr;
-    grid-template-areas: 
+    grid-template-areas:
     "header header header"
     "image image image"
     "about about about"
@@ -15,7 +15,6 @@ body {
     letter-spacing: 2px;
     font-size: 15px;
   }
-  
   nav {
       display: flex;
       justify-content: space-evenly;
@@ -30,11 +29,11 @@ body {
       align-self: center;
       margin-bottom: 10px;
   }
-  
+
   .logo img{
     width: 65%;
   }
-  
+
   .responsive {
     width: 80%;
     height: auto;
@@ -45,21 +44,21 @@ body {
       list-style: none;
       margin-top: 5%;
   }
-  
+
   .links {
       grid-area: links;
       text-align: center;
   }
-  
+
   a {
       color: #76575D;
       text-decoration: none;
   }
-  
+
   a:hover {
      color: #6D9891;
     }
-  
+
 .header {
     grid-area: header;
     color: #76575D;
